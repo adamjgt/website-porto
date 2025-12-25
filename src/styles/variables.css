@@ -1,0 +1,61 @@
+:root {
+  /* ====== DARK THEME (Default) ====== */
+  --bg-body: #0a0e14;
+  --bg-surface: #131b26;
+
+  /* Glassmorphism */
+  --glass-bg: rgba(30, 41, 59, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: 12px;
+
+  /* Accents */
+  --accent-primary: #3b82f6;
+  --accent-secondary: #8b5cf6;
+  --accent-gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+
+  /* Typography */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-accent: #60a5fa;
+
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+
+  /* Spacing & Radius */
+  --radius-lg: 1rem;
+  --radius-md: 0.5rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-theme: 0.3s ease;
+}
+
+/* ====== LIGHT THEME ====== */
+/* Professional, calm colors that convey competence */
+[data-theme="light"] {
+  /* Background: Soft off-white, easy on eyes */
+  --bg-body: #f8fafc;
+  --bg-surface: #ffffff;
+
+  /* Glassmorphism for light mode */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(15, 23, 42, 0.08);
+
+  /* Accents: Deep professional blue-teal gradient */
+  --accent-primary: #0d6efd;
+  /* Trustworthy blue */
+  --accent-secondary: #0ea5e9;
+  /* Tech-savvy cyan */
+  --accent-gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+
+  /* Typography: High contrast for readability */
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-accent: #0d6efd;
+}

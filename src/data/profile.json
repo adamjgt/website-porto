@@ -1,0 +1,51 @@
+{
+    "name": "Poa Developer",
+    "title": "Backend Developer & System Architect",
+    "bio": "Specializing in building scalable, high-performance APIs and distributed systems. Expert in turning complex data problems into efficient backend solutions.",
+    "social": {
+        "github": "https://github.com/adamjgt",
+        "linkedin": "https://linkedin.com/in/adamjgt",
+        "email": "adamjagad2@gmail.com"
+    },
+    "skills": [
+        {
+            "category": "Languages",
+            "items": [
+                "Python",
+                "SQL",
+                "JavaScript",
+                "Dart"
+            ]
+        },
+        {
+            "category": "Frameworks",
+            "items": [
+                "FastAPI",
+                "Flask",
+                "Express"
+            ]
+        },
+        {
+            "category": "Infrastructure",
+            "items": [
+                "Docker",
+                "Nginx"
+            ]
+        },
+        {
+            "category": "Databases",
+            "items": [
+                "PostgreSQL",
+                "Redis",
+                "MongoDB"
+            ]
+        },
+        {
+            "category": "Tools",
+            "items": [
+                "Git",
+                "CI/CD"
+            ]
+        }
+    ]
+}

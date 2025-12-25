@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ocr-api",
+        "title": "OCR API Service",
+        "shortDescription": "High-throughput Optical Character Recognition service designed for extracting text from images at scale.",
+        "fullDescription": "A robust, production-ready OCR API built with Python and FastAPI. It utilizes a Redis-based job queue to handle high-volume concurrent requests efficiently. The system is containerized with Docker for consistent deployment and scalability.",
+        "techStack": [
+            "Python",
+            "FastAPI",
+            "Redis",
+            "Docker",
+            "Tesseract"
+        ],
+        "highlights": [
+            "Asynchronous job processing with Redis queue",
+            "Scalable architecture supporting horizontal scaling",
+            "Comprehensive API documentation with Swagger UI",
+            "99.9% uptime with robust error handling"
+        ],
+        "architectureDiagram": "images/ocr-architecture.png",
+        "links": {
+            "github": "https://github.com/adamjgt/ocr-API",
+            "demo": "#",
+            "docs": "#"
+        },
+        "codeSnippet": {
+            "language": "python",
+            "code": "@app.post('/ocr/submit')\nasync def submit_job(file: UploadFile, background_tasks: BackgroundTasks):\n    job_id = str(uuid.uuid4())\n    image_bytes = await file.read()\n    \n    # Enqueue job to Redis\n    await redis_client.lpush('ocr_queue', json.dumps({'id': job_id, 'data': base64.b64encode(image_bytes).decode()}))\n    \n    return {'job_id': job_id, 'status': 'queued'}"
+        }
+    },
+    {
+        "id": "Coming Soon",
+        "title": "Coming Soon",
+        "shortDescription": "?",
+        "fullDescription": "?",
+        "techStack": [
+            "?"
+        ],
+        "highlights": [
+            ""
+        ],
+        "architectureDiagram": "...",
+        "links": {
+            "github": "#",
+            "demo": "#",
+            "docs": "#"
+        },
+        "codeSnippet": {
+            "language": "python",
+            "code": "?"
+        }
+    }
+]
